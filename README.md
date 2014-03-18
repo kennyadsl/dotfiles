@@ -57,4 +57,3 @@ What's in it?
 [zsh](http://zsh.sourceforge.net/FAQ/zshfaq01.html) configuration and aliases:
 
 * `todo` to edit my todo file, located at `~/Dropbox/todo`.
-* Specify location of [Go workspace](http://golang.org/doc/code.html#GOPATH).

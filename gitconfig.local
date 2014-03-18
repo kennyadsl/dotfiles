@@ -1,7 +1,33 @@
+[user]
+  name = Alberto Vena
+  email = kennyadsl@gmail.com
 [alias]
+  ci = commit
+  cm = commit -m
+  br = branch
+  co = checkout
+  df = diff
+  dfc = diff --cached
+  s = status
+  who = shortlog -s --
+  pr = pull --rebase
+
   l = log --pretty=colored
+  lg = log --graph --pretty=complete --abbrev-commit --date=relative
+  ll = log --stat --abbrev-commit
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
-[user]
-  name = Dan Croak
-  email = dan@thoughtbot.com
+  complete = format:%Cred%h%Creset -%C(yellow)%d%Creset %s (%C(green)%cr%Creset by %C(magenta)%an%Creset)
+[color]
+  ui = true
+  diff = true
+  status = true
+  branch = auto
+[github]
+  user = kennyadsl
+[core]
+  editor = /usr/bin/vim
+[push]
+  default = current
+[hub]
+  protocol = https

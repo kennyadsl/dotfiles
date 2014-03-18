@@ -1,13 +1,8 @@
-# todo
-alias todo="vim ~/Dropbox/todo"
-
-open_irc_session_in_tmux() {
-  if tmux list-sessions | grep -Fq irc; then
-    tmux attach -t irc
-  else
-    tmux new -s irc
-  fi
-}
-
-# irc
-alias irc="open_irc_session_in_tmux"
+alias zshconfig="st ~/.zshrc"
+alias reload="source ~/.zshrc"
+alias be="bundle exec"
+alias bo="bundle open"
+alias bs="bundle show"
+alias bu="bundle update"
+alias bus="bundle update --source"
+alias fs="foreman start"
