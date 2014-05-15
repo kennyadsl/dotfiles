@@ -2,6 +2,9 @@
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
+export VISUAL=atom
+export EDITOR=$VISUAL
+
 unsetopt correct_all
 
 cdpath=(~/Code/)

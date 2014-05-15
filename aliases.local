@@ -1,4 +1,4 @@
-alias zshconfig="st ~/.zshrc"
+alias zshconfig="atom ~/.zshrc"
 alias reload="source ~/.zshrc"
 alias be="bundle exec"
 alias bo="bundle open"
@@ -6,6 +6,3 @@ alias bs="bundle show"
 alias bu="bundle update"
 alias bus="bundle update --source"
 alias fs="foreman start"
-
-alias st="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
-alias stt="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl ."
