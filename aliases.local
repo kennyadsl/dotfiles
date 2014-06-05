@@ -6,3 +6,10 @@ alias bs="bundle show"
 alias bu="bundle update"
 alias bus="bundle update --source"
 alias fs="foreman start"
+
+# When a gem is used locally it will not be possible to update it without unsetting it to be used locally
+# This function will:
+#  - unset the gem as local
+#  - update the gem with --source option
+#  - set the gem as local again
+busl () { bundle config --delete local.$* && bundle update --source $* &&  bundle config local.$* ../$* }
