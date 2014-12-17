@@ -6,6 +6,7 @@ alias bs="bundle show"
 alias bu="bundle update"
 alias bus="bundle update --source"
 alias fs="foreman start"
+alias sidekill="ps -ef | grep sidekiq | grep -v grep | awk '{print $2}' | xargs kill -9"
 
 # When a gem is used locally it will not be possible to update it without unsetting it to be used locally
 # This function will:
