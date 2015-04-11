@@ -1,5 +1,6 @@
 alias zshconfig="atom ~/.zshrc"
 alias reload="source ~/.zshrc"
+alias b="bundle"
 alias be="bundle exec"
 alias bo="bundle open"
 alias bs="bundle show"
