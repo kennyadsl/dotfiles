@@ -31,3 +31,9 @@
   default = current
 [hub]
   protocol = https
+[url "http://github.com/"]
+  insteadof = git://github.com/
+[url "https://github.com/"]
+  insteadof = git://github.com/
+[url "https://github.com/"]
+  insteadof = ssh://git@github.com/

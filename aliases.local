@@ -8,10 +8,6 @@ alias bu="bundle update"
 alias bus="bundle update --source"
 alias fs="foreman start"
 alias sidekill="ps -ef | grep sidekiq | grep -v grep | awk '{print $2}' | xargs kill -9"
+alias fakill3="ps -ef | grep fakes3 | grep -v grep | awk '{print $2}' | xargs kill -9"
+alias bss="bin/spring stop"
 
-# When a gem is used locally it will not be possible to update it without unsetting it to be used locally
-# This function will:
-#  - unset the gem as local
-#  - update the gem with --source option
-#  - set the gem as local again
-busl () { bundle config --delete local.$* && bundle update --source $* &&  bundle config local.$* ../$* }

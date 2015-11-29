@@ -10,7 +10,5 @@ brew cask install iterm2
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-drive
-brew cask install chromecast
 
-brew cask install kindle
 brew cask install skype
