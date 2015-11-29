@@ -5,9 +5,9 @@ export PATH="$HOME/bin:$PATH"
 # custom prompt
 export PS1='%{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info) %# '
 
-export VISUAL=atom
+export VISUAL=vim
 export EDITOR=$VISUAL
 
 unsetopt correct_all
 
-cdpath=(~/Code/)
+cdpath=(~/Code/*)
