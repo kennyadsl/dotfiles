@@ -26,7 +26,8 @@
 [github]
   user = kennyadsl
 [core]
-  editor = /usr/bin/vim
+[pull]
+  default = current
 [push]
   default = current
 [hub]
