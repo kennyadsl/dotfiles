@@ -11,3 +11,9 @@ alias sidekill="ps -ef | grep sidekiq | grep -v grep | awk '{print $2}' | xargs 
 alias fakill3="ps -ef | grep fakes3 | grep -v grep | awk '{print $2}' | xargs kill -9"
 alias bss="bin/spring stop"
 
+meteo() {
+  # usage:
+  # meteo Rome
+  url="wttr.in/"+$1
+  curl $url
+}
