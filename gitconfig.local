@@ -5,12 +5,14 @@
   ci = commit
   cm = commit -m
   br = branch
+  brr = branch --remote
   co = checkout
   df = diff
   dfc = diff --cached
   s = status
   who = shortlog -s --
   pr = pull --rebase
+  ri = rebase -i origin/master
 
   l = log --pretty=colored
   lg = log --graph --pretty=complete --abbrev-commit --date=relative
