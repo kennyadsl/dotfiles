@@ -1,8 +1,10 @@
-croaky dotfiles
+kennyadsl dotfiles
 ===============
 
+Inspired by [croaky](https://github.com/croaky/dotfiles).
+
 I use [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) and
-croaky/dotfiles together using the `*.local` convention described in
+kennyadsl/dotfiles together using the `*.local` convention described in
 thoughtbot/dotfiles.
 
 Requirements
@@ -14,7 +16,7 @@ Set zsh as your login shell.
 
 Install [rcm](https://github.com/mike-burns/rcm).
 
-    brew tap mike-burns/rcm
+    brew tap thoughtbot/formulae
     brew install rcm
 
 Install
@@ -22,11 +24,11 @@ Install
 
 Clone onto your laptop:
 
-    git clone git://github.com/croaky/dotfiles.git
+    git clone git://github.com/kennyadsl/dotfiles.git
 
 Install:
 
-    rcup -d dotfiles -x README.md
+    env RCRC=$HOME/croaky/dotfiles/rcrc rcup
 
 This will create symlinks for config files in your home directory.
 
