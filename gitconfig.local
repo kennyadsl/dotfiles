@@ -13,6 +13,8 @@
   who = shortlog -s --
   pr = pull --rebase
   ri = rebase -i origin/master
+  co- = checkout -
+  co-2 = checkout @{-2}
 
   l = log --pretty=colored
   lg = log --graph --pretty=complete --abbrev-commit --date=relative

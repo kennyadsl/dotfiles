@@ -10,11 +10,13 @@ alias fs="foreman start"
 alias sidekill="ps -ef | grep sidekiq | grep -v grep | awk '{print $2}' | xargs kill -9"
 alias fakill3="ps -ef | grep fakes3 | grep -v grep | awk '{print $2}' | xargs kill -9"
 alias bss="bin/spring stop"
-
+alias gsa='git diff-tree --no-commit-id --name-only -r HEAD | xargs atom'
 
 postgres_path="~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias post-on="launchctl load -F $postgres_path"
 alias post-off="launchctl unload -F $postgres_path"
+
+alias ruby-up="brew update && brew upgrade ruby-build"
 
 meteo() {
   # usage:

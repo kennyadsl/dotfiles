@@ -1,6 +1,7 @@
 # recommended by brew doctor
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="$PATH:`yarn global bin`"
 
 # custom prompt
 export PS1='%{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info) %# '
