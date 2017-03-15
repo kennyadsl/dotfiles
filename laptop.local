@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+brew install antigen
+
 # Homebrew-cask
 brew tap phinze/homebrew-cask
 brew install brew-cask

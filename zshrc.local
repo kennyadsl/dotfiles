@@ -3,8 +3,14 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
 
-# custom prompt
-export PS1='%{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info) %# '
+source /usr/local/share/antigen/antigen.zsh
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-autosuggestions
+antigen theme carloscuesta/materialshell zsh/materialshell-dark
+antigen apply
 
 export VISUAL=atom
 export EDITOR=$VISUAL
