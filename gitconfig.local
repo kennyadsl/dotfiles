@@ -1,6 +1,7 @@
 [user]
   name = Alberto Vena
   email = kennyadsl@gmail.com
+  signingkey = 0BCF1AEF6C2DFCEB
 [alias]
   ci = commit
   cm = commit -m
@@ -29,6 +30,8 @@
   branch = auto
 [github]
   user = kennyadsl
+[commit]
+  gpgsign = true
 [core]
 [pull]
   default = current

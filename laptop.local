@@ -3,6 +3,8 @@
 brew install htop
 brew install antigen
 
+brew install gpg
+
 # Homebrew-cask
 brew tap caskroom/cask
 

@@ -2,6 +2,7 @@
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$PATH:`yarn global bin`"
+export PATH="./node_modules/.bin:$PATH"
 
 source /usr/local/share/antigen/antigen.zsh
 antigen use oh-my-zsh
@@ -15,6 +16,9 @@ antigen apply
 export VISUAL=atom
 export EDITOR=$VISUAL
 
+export PULSAR_CONF_REPO="nebulab/pulsar-conf"
+
 unsetopt correct_all
 
 cdpath=(~/Code/*)
+export GPG_TTY=$(tty)
