@@ -27,7 +27,7 @@ Clone onto your laptop:
 
 Install:
 
-    env RCRC=$HOME/kennyadsl/dotfiles/rcrc rcup
+    env RCRC=$HOME/Code/kennyadsl/dotfiles/rcrc rcup
 
 This will create symlinks for config files in your home directory.
 
