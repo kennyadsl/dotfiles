@@ -22,7 +22,7 @@ Install
 
 Clone onto your laptop:
 
-    mkdir -p ~/Code/kennyads
+    mkdir -p ~/Code/kennyadsl
     git clone git://github.com/kennyadsl/dotfiles.git ~/Code/kennyadsl/
 
 Install:
