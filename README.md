@@ -22,8 +22,8 @@ Install
 
 Clone onto your laptop:
 
-    mkdir -p ~/Code/kennyadsl
-    git clone git://github.com/kennyadsl/dotfiles.git ~/Code/kennyadsl/
+    mkdir -p ~/Code/kennyadsl/dotfiles
+    git clone git://github.com/kennyadsl/dotfiles.git ~/Code/kennyadsl/dotfiles
 
 Install:
 
