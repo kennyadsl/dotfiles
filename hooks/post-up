@@ -1,6 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-if [ ! -e $HOME/.vim/bundle/vundle ]; then
-  git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
-  vim -u $HOME/.vimrc.bundles +BundleInstall +qa
-fi
+# Install rbenv-default-gems
+git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems

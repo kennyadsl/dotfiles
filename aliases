@@ -1,0 +1,26 @@
+# Unix
+alias tlf="tail -f"
+# Filesystem
+alias mkdir='mkdir -p'
+alias l='ls'
+alias ll='ls -al'
+
+# Hub [TODO: check if still relevant]
+alias git=hub
+
+# Bundle
+alias b="bundle"
+alias be="bundle exec"
+alias bo="bundle open"
+alias bs="bundle show"
+alias bu="bundle update"
+alias bus="bundle update --source"
+
+# Postgres Controls
+postgres_path="~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias postgres-on="launchctl load -F $postgres_path"
+alias postgres-off="launchctl unload -F $postgres_path"
+
+# Ruby
+alias ruby-up="brew update && brew upgrade ruby-build"
+

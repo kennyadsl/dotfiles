@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+brew install htop
+
+# zsh plugin manager
+brew install antigen
+
+brew install mysql
+brew install postgresql
+brew install gpg
+brew install pinentry-mac
+
+# Homebrew-cask
+brew tap caskroom/cask
+
+# Native apps
+brew cask install iterm2
+brew cask install whatsapp
+brew cask install telegram
+brew cask install slack
+brew cask install todoist
+brew cask install fellow
+brew cask install spark
+brew cask install 1passwork
+brew cask install intelliscape-caffeine
+brew cask install zoomus
+

@@ -1,0 +1,106 @@
+[user]
+  signingkey = XXX
+  name = Alberto Vena
+  email = kennyadsl@gmail.com
+
+[github]
+  user = kennyadsl
+
+[alias]
+  # Show all active aliases
+  alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
+
+  aa = add --all
+  ap = add --patch
+
+
+  br = branch
+  brr = branch --remote
+  # Fuzzy search branches
+  b = !git branch | fzf --ansi --reverse --no-sort | xargs git checkout
+
+  co = checkout
+  cob = co -b
+
+  cp = cherry-pick
+
+  ci = commit
+  cm = commit -m
+  call = commit -a
+  callm = commit -a -m
+  cane = commit --amend --no-edit
+  # Create a fixup commit with fuzzy search
+  cf = !git log -50 --color | fzf --ansi --reverse --no-sort | cut -d ' ' -f1 | xargs git commit --fixup
+
+
+  df = diff
+  dfc = diff --cached
+
+  f = fetch -a
+  fu = fetch -a upstream
+
+  l = log --pretty=colored
+  lg = log --graph --pretty=complete --abbrev-commit --date=relative
+  ll = log --stat --abbrev-commit
+
+  pr = pull --rebase
+  pu = pull upstream
+  pum = pull upstream master
+
+  pushf = push --force-with-lease
+  pf = pushf
+
+  r = rebase origin/master
+  ri = rebase -i origin/master
+  ru = rebase upstream/master
+  riu = rebase -i upstream/master
+
+  st = status
+  s = st
+
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+  editor = vim
+
+[commit]
+  template = ~/.gitmessage
+  gpgsign = false
+
+[fetch]
+  prune = true
+
+[push]
+  default = current
+
+[pull]
+  default = current
+  rebase = true
+
+[rebase]
+  autosquash = true
+
+[credential]
+  helper = osxkeychain
+
+[hub]
+  protocol = https
+
+[diff]
+  compactionHeuristic = true
+
+[gpg]
+  program = gpg
+
+[color]
+  ui = true
+  diff = true
+  status = true
+  branch = auto
+
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+  complete = format:%Cred%h%Creset -%C(yellow)%d%Creset %s (%C(green)%cr%Creset by %C(magenta)%an%Creset)
+
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
