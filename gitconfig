@@ -104,3 +104,6 @@
 
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+
+[include]
+  path = .gitconfig-secrets

@@ -62,7 +62,7 @@ antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-autosuggestions
-antigen theme carloscuesta/materialshell zsh/materialshell-dark
+antigen theme carloscuesta/materialshell materialshell
 antigen bundle fzf
 antigen apply
 
@@ -82,3 +82,5 @@ cdpath=(~/Code/*)
 export GPG_TTY=$(tty)
 
 export LANG="en_US.UTF-8"
+
+source /Users/kennyadsl/.asdf/asdf.sh

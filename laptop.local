@@ -6,22 +6,20 @@ brew install htop
 brew install antigen
 
 brew install mysql
-brew install postgresql
-brew install gpg
-brew install pinentry-mac
+brew install fzf
 
 # Homebrew-cask
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 # Native apps
 brew cask install iterm2
 brew cask install whatsapp
 brew cask install telegram
 brew cask install slack
-brew cask install todoist
 brew cask install fellow
-brew cask install spark
-brew cask install 1passwork
-brew cask install intelliscape-caffeine
+brew cask install 1password
+brew cask install caffeine
 brew cask install zoomus
+brew cask install visual-studio-code
+brew cask install logitech-options
 
