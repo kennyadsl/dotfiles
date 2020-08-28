@@ -1,5 +1,4 @@
 [user]
-  signingkey = XXX
   name = Alberto Vena
   email = kennyadsl@gmail.com
 
@@ -65,7 +64,7 @@
 
 [commit]
   template = ~/.gitmessage
-  gpgsign = false
+  gpgsign = true
 
 [fetch]
   prune = true
