@@ -31,7 +31,6 @@
   # Create a fixup commit with fuzzy search
   cf = !git log -50 --color | fzf --ansi --reverse --no-sort | cut -d ' ' -f1 | xargs git commit --fixup
 
-
   df = diff
   dfc = diff --cached
 
@@ -49,10 +48,10 @@
   pushf = push --force-with-lease
   pf = pushf
 
-  r = rebase origin/master
-  ri = rebase -i origin/master
-  ru = rebase upstream/master
-  riu = rebase -i upstream/master
+  rom = rebase origin/master
+  riom = rebase -i origin/master
+  rum = rebase upstream/master
+  rium = rebase -i upstream/master
 
   st = status
   s = st
