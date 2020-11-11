@@ -10,4 +10,5 @@ tags
 tmp/**/*
 !tmp/cache/.keep
 zeus.json
+*.code-workspace
 ___*
