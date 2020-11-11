@@ -63,6 +63,7 @@
   excludesfile = ~/.gitignore
   autocrlf = input
   editor = vim
+  attributesfile = ~/.gitattributes
 
 [commit]
   template = ~/.gitmessage
@@ -89,6 +90,9 @@
 
 [diff]
   compactionHeuristic = true
+
+[diff "rspec"]
+  xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
 
 [gpg]
   program = gpg
