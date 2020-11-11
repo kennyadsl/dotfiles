@@ -56,6 +56,9 @@
   st = status
   s = st
 
+  skip = update-index --skip-worktree
+  unskip = update-index --no-skip-worktree
+
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
