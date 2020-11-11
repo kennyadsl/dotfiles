@@ -24,4 +24,10 @@ brew cask install caffeine
 brew cask install zoomus
 brew cask install visual-studio-code
 brew cask install logitech-options
+brew cask install monitorcontrol
+brew cask install authy
+brew cask install notion
 
+# Mac App Store installations
+brew install mas
+mas install 585829637 # Todoist
